@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat-o-blast</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>  
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="syntex-script.css">
+<style>
+    .container{
+        width:822px;
+        height:349px;
+        padding:20px;
+        margin: 10px auto;
+        box-shadow:0px 0px 10px 2px grey;
+        border: 10px solid black;
+        background-image: url(chat22.jpg);
+        background-color: cover;
+        box-shadow: 5px 13px 13px black;
+        border-radius: 5px;
+        overflow-y: scroll;
+        margin-bottom: 23px;
+    }
+    </style>
+</head>
+<body background="chat1.jpg">
+    <nav>
+    <img class="logo" src="LOGO1.png">
+    <h1><b> WELCOME TO CHAT-O-BLAST!</b></h1>
+    </nav>
+    <div class="container">
+        <div class="message right"></div>
+        <div class="message left"></div>
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" myname="messageInp" id="messageInp">
+            <button class="btn" type="submit">send</button>
+        </form>
+    </div>  
+    
+</body>
+
+</html>
